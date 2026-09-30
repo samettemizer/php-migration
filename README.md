@@ -39,3 +39,8 @@ $scripts_dir = '/var/www/myproject/any/path';
 $migration = new YD\Migration($instance, $scripts_dir);
 $migration->run();
 ```
+
+## tests
+
+    composer install
+    vendor/bin/phpunit
