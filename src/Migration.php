@@ -77,6 +77,8 @@ class Migration
             }
             $migrations[] = $file;
         }
+        // natural order: 10-*.sql runs after 9-*.sql
+        usort($migrations, 'strnatcmp');
         if (!($sizeof=sizeof($migrations)) || $migration_last >= $sizeof-1) {
             exit;
         }

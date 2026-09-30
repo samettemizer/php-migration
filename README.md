@@ -21,12 +21,15 @@ if you only need this package during development:
 $instance = new PDO(args);
 
 /**
- * example migration scripts :
+ * example migration scripts, executed in natural order of file names :
  * 0-create-tbl-foo.sql
  * 1-modify-tbl-foo.sql
  * 2-another-migration.sql
  * 2-foo-new-fields.sql
  * 3-foo-new-index.sql
+ * ...
+ * 9-foo-new-index-y.sql
+ * 10-foo-new-index-z.sql
  */
 $scripts_dir = '/var/www/myproject/any/path';
 
@@ -36,3 +39,8 @@ $scripts_dir = '/var/www/myproject/any/path';
 $migration = new YD\Migration($instance, $scripts_dir);
 $migration->run();
 ```
+
+## tests
+
+    composer install
+    vendor/bin/phpunit
