@@ -1,6 +1,6 @@
 # php-migration
 
-a mysql migration tool for php applications without framework
+a MySQL migration tool for framework-free PHP applications.
 
 ## installation
 

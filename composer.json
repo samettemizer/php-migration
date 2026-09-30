@@ -1,6 +1,6 @@
 {
   "name": "stemizer/php-migration",
-  "description": "a mysql migration tool for php applications without framework",
+  "description": "MySQL migration tool for standalone PHP applications.",
   "minimum-stability": "dev",
   "license": "MIT",
   "authors": [
