@@ -2,7 +2,7 @@
   "name": "stemizer/php-migration",
   "description": "a mysql migration tool for php applications without framework",
   "minimum-stability": "dev",
-  "license": "-",
+  "license": "MIT",
   "authors": [
     {
       "name": "Samet TEMIZER",
